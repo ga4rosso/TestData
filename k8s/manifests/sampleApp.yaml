@@ -2,13 +2,13 @@ apiVersion: v1
 kind: Pod
 metadata:
   labels:
-    run: sampleApp
+    run: sampleapp
     version: 1
-  name: sampleApp
+  name: sampleapp
 spec:
   containers:
   - image: nginx
-    name: sampleApp
+    name: sampleapp
     resources: {}
   dnsPolicy: ClusterFirst
   restartPolicy: Always
