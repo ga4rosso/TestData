@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    run: sampleapp6
+    version: "1"
+  name: sampleapp6
+  namespace: gr2
+spec:
+  containers:
+  - image: nginx
+    name: sampleapp6
+    resources: {}
+  dnsPolicy: ClusterFirst
+  restartPolicy: Always
