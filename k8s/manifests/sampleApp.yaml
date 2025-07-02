@@ -3,7 +3,7 @@ kind: Pod
 metadata:
   labels:
     run: sampleapp
-    version: "1"
+    version: 1
   name: sampleapp
   namespace: gr
 spec:
