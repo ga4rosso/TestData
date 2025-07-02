@@ -5,6 +5,7 @@ metadata:
     run: sampleapp2
     version: "1"
   name: sampleapp2
+  namespace: gr
 spec:
   containers:
   - image: nginx
