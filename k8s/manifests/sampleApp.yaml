@@ -8,7 +8,8 @@ metadata:
   namespace: gr1
 spec:
   containers:
-  - image: nginx
+  - image: alpine
+    command: ["sh", "-c", "while true; do sleep 3600; done"]
     name: sampleapp
     resources: {}
     securityContext:
@@ -17,7 +18,8 @@ spec:
         drop: 
           - ALL
       runAsNonRoot: true
+      runAsUser: 1000
       seccompProfile:
-        type: Localhost
+        type: RuntimeDefault
   dnsPolicy: ClusterFirst
   restartPolicy: Always
